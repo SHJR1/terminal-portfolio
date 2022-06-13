@@ -1,0 +1,55 @@
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#content {
+    background-color: green;
+    /* max-width: 80vh; */
+    width: 50%;
+    height: 30rem;
+    position: fixed;
+}
+
+#navbar {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+}
+
+h2 {
+    display: inline;
+}
+
+.circles {
+    display: flex;
+    align-items: center;     
+}
+
+.round {
+    margin: 0px 5px;
+}
+
+.round:first-child {
+    height: 1rem;
+    width: 1rem;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.round:nth-child(2) {
+    height: 1rem;
+    width: 1rem;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.round:nth-child(3) {
+    height: 1rem;
+    width: 1rem;
+    background-color: red;
+    border-radius: 50%;
+}
