@@ -1,3 +1,7 @@
+* {
+    
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -6,7 +10,7 @@
 }
 
 #content {
-    background-color: green;
+    background-color: #004369;
     /* max-width: 80vh; */
     width: 50%;
     height: 30rem;
@@ -22,11 +26,20 @@
 
 h2 {
     display: inline;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    
+}
+
+.header {
+    margin-top: .5rem;
+    margin-right: 2rem;
 }
 
 .circles {
     display: flex;
-    align-items: center;     
+    align-items: center;  
+    margin-left: 1rem;
 }
 
 .round {
