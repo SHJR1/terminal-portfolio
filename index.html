@@ -8,7 +8,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-        <title>Portfolio</title>
+        <link rel="shortcut icon" href="/icon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/icon/favicon.ico" type="image/x-icon">
+        <title>SergioTerminal</title>
     </head>
     <body onload="date()">
         <div id="container">
@@ -21,15 +23,23 @@
                     </div>
                     <div class="header">
                         <h2><a href="https://github.com/SHJR1" target="_blank">SergioTerminal V1.12</a></h2>
-                        <h2 class="phoneDisplay">V1.12</h2>
+                        <h2 class="phoneDisplay"><a href="https://github.com/SHJR1" target="_blank">V1.12</a></h2>
                     </div>
                 </div>
-                <div class="terminal">
-                    <p>Welcome...</p>
-                    <p>Last login: <span id="date"></span></p>
+                <div id="terminal">
+                    <p class="animatedText">Welcome...
+                        <span class="br">
+                            Last login: <span id="date"></span>
+                        </span>
+                        <span>
+                            Type <span class="help">"help"</span> to get started
+                        </span>
+                    </p>
+                    <p id="caret">root:~$ ></p> <input type="text" autofocus>
                 </div>
             </div>
         </div>
+        <script src="commands.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
