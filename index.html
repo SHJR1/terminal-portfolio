@@ -10,7 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <title>Portfolio</title>
     </head>
-    <body>
+    <body onload="date()">
         <div id="container">
             <div id="content">
                 <div id="navbar">
@@ -20,13 +20,16 @@
                         <div class="round"></div>
                     </div>
                     <div class="header">
-                        <h2><a href="https://github.com/SHJR1" target="_blank">SHJR1</a></h2>
+                        <h2><a href="https://github.com/SHJR1" target="_blank">SergioTerminal V1.12</a></h2>
+                        <h2 class="phoneDisplay">V1.12</h2>
                     </div>
                 </div>
                 <div class="terminal">
-
+                    <p>Welcome...</p>
+                    <p>Last login: <span id="date"></span></p>
                 </div>
             </div>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>

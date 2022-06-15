@@ -1,6 +1,6 @@
 body {
-    background-color: #525174;
-    /*background-color: #14213d;*/
+    background-color: #6c757d;
+    /*background-color: #14213d;525174  b5d6d6*/
 }
 
 #container {
@@ -11,8 +11,8 @@ body {
 }
 
 #content {
-    background-color: #004369;
-    /*background-color: #14213d;*/
+    background-color: #333533;
+    /*background-color: #004369;14213d 333533*/
     
     width: 50%;
     height: 30rem;
@@ -35,6 +35,7 @@ body {
     border: 1px solid #c2c2c2;
     border-left: 0px;
     border-right: 0px;
+    
 }
 
 h2 {
@@ -43,14 +44,22 @@ h2 {
     font-size: .8rem;
 }
 
+.phoneDisplay {
+    display: none;
+}
+
 .header {
     margin-top: .6rem;
-    margin-right: .5rem;
+    margin-right: 1rem;
 }
 
 a {
     text-decoration: none;
     color: #393d3f;
+}
+
+a:hover {
+    color: #e5e5e5;
 }
 
 .circles {
@@ -100,4 +109,38 @@ a {
     height: 1.1rem;
     width: 1.1rem;
     box-shadow: 15px 15px rgba(0, 0, 0, 0.5) inset;
+}
+
+.terminal {
+    padding-left: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .7rem;
+    color: #4AF626;
+    /*38b000 4AF626*/
+}
+
+
+@media screen and (max-width: 720px) {
+
+    .phoneDisplay {
+        display: none;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    h2 {
+        display: none;
+    } 
+
+    .phoneDisplay {
+        display: inline;
+        font-family: 'Press Start 2P', cursive;
+        font-size: .8rem;
+        color: #393d3f;
+    }
 }
