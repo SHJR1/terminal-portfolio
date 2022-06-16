@@ -2,9 +2,8 @@ let commandList = ['about <span class="helpSpace">Learn about me!</span>','proje
 
 let aboutList = [
     "<br>",
-    "<span class='help helpPadding'>Hey! I'm Sergio!</span> <br>",
+    "<span class='help helpPadding'>Hey! I'm Sergio!</span><br>",
     "<br><span class='help helpPadding'>I am currently learning how to code at Multiverse!</span>",
-    "<br>"
 ];
 
 let projectList = [

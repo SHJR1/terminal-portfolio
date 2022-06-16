@@ -3,9 +3,9 @@
 }
 
 body {
-    background-color: #6c757d;
+    background-color: #184e77;
     overflow-y: hidden;
-    /*background-color: #14213d;525174  b5d6d6*/
+    /*background-color:blue=013a63 #14213d;525174  b5d6d6*/
 }
 
 #container {
@@ -35,7 +35,7 @@ body {
   }
 
 #navbar {
-    background-color: grey;
+    background-color: #8b8c89;
     display: flex;
     justify-content: space-between;
     height: 2rem;
@@ -66,11 +66,11 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #e5e5e5;
+    color: #393d3f;
 }
 
 a:hover {
-    color: #393d3f;
+    color: #c2c2c2;
 }
 
 .circles {
