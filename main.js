@@ -48,7 +48,7 @@ function checkInput(input){
     if(command){
         switch(command){
             case "clear":
-                clear();
+                clearCommand();
                 break;
             case "help":
                 help();
@@ -60,10 +60,10 @@ function checkInput(input){
                 projectCommand();
                 break;
             case "socials":
-                socials();
+                socialsCommand();
                 break;
             case "website":
-                clearConsole();
+                websiteCommand();
                 break;
             default:
                 terminal.innerHTML += `<p class="error"> <span class="errorMessage">"${input}"</span> is not a valid command, try <span class="help">"help"</span></p>`;
@@ -78,7 +78,7 @@ function checkInput(input){
 //Focuses on text box
 //Calls run()
 function addInput(){
-    terminal.innerHTML += '<span id="caret">root:~$ <span class="codeGreen">></span></span> <input type="text" autofocus/>';
+    terminal.innerHTML += '<br><br><br><span id="caret">root:~$ <span class="codeGreen">></span></span> <input type="text" autofocus/>';
     input = document.querySelector("input");
     input.focus();
     run();
@@ -87,20 +87,33 @@ function addInput(){
 function help() {
     terminal.innerHTML += '<br><br>';
     for(let i=0; i<commandList.length;i++){
-        terminal.innerHTML += `<span class="error codeGreen">${commandList[i]}</span><br><br>`;
+        terminal.innerHTML += `<br><span class="error codeGreen">${commandList[i]}</span>`;
     }
 }
 
-function clear(){
-    terminal.innerHTML = '';
+//Clear console
+function clearCommand(){
+    terminal.innerHTML = ``;
 }
 
+//Display about
 function aboutCommand(){
-    terminal.innerHTML += `<br><br><span class="error codeGreen">${aboutList.join(" ")}</span><br><br>`;
+    terminal.innerHTML += `<br><br><span class="error codeGreen">${aboutList.join(" ")}</span>`;
 }
 
+//Display projects
 function projectCommand(){
-    terminal.innerHTML += `<br><br><span class="error codeGreen">${projectList.join(" ")}</span><br><br>`;
+    terminal.innerHTML += `<br><br><span class="error codeGreen">${projectList.join(" ")}</span>`;
+}
+
+//Display socials
+function socialsCommand(){
+    terminal.innerHTML += `<br><span class="error codeGreen">${socialsList.join(" ")}</span>`;
+}
+
+//Display website
+function websiteCommand(){
+    terminal.innerHTML += `<br><br><span class="error codeGreen">${socialsList.join(" ")}</span>`;
 }
 
 //Get date and time, display at #date element

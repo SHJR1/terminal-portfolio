@@ -1,3 +1,7 @@
+:root {
+    --main-text: ;
+}
+
 body {
     background-color: #6c757d;
     overflow-y: hidden;
@@ -9,20 +13,26 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 #content {
     background-color: #333533;
     /*background-color: #004369;14213d 333533*/
-    position: fixed;
     width: 50%;
     height: 30rem;
     border-radius: .5rem;
     border: 1px solid #c2c2c2;
     border-top: 0px;
     box-shadow: 2px 3px 20px 2px #888888;
-    overflow-y: hidden;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+#content::-webkit-scrollbar {
+    display: none;
+  }
 
 #navbar {
     background-color: grey;
@@ -56,11 +66,11 @@ h2 {
 
 a {
     text-decoration: none;
-    color: #393d3f;
+    color: #e5e5e5;
 }
 
 a:hover {
-    color: #e5e5e5;
+    color: #393d3f;
 }
 
 .circles {
@@ -122,7 +132,7 @@ a:hover {
 }
 
 .error {
-    margin: 1rem 0 .5rem 2rem;
+    margin: 1rem 0 0 2rem;
 }
 
 .errorMessage {
@@ -137,6 +147,10 @@ a:hover {
     color: #65afff;
 }
 
+.helpPadding {
+    margin-left: 4rem;
+}
+
 .helpSpace {
     padding-left: 30px;
     color: #65afff;
@@ -146,16 +160,16 @@ a:hover {
 
 .helpSpace a {
     text-decoration: underline;
-    color: #c2c2c2;
+    color: #65afff;
 }
 
 .helpSpace a:hover {
     text-decoration: underline;
-    color: #65afff;
+    color: #c2c2c2;
 }
 
 .cmdOutput {
-    color: #65afff;
+    color: #4AF626;
     margin-left: 2rem;
 }
 

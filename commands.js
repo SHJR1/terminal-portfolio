@@ -2,8 +2,8 @@ let commandList = ['about <span class="helpSpace">Learn about me!</span>','proje
 
 let aboutList = [
     "<br>",
-    "<span class='cmdOutput'>Hey! I'm Sergio!</span> <br>",
-    "<br><span class='cmdOutput'>I am currently learning how to code at Multiverse!</span>",
+    "<span class='help helpPadding'>Hey! I'm Sergio!</span> <br>",
+    "<br><span class='help helpPadding'>I am currently learning how to code at Multiverse!</span>",
     "<br>"
 ];
 
@@ -13,3 +13,9 @@ let projectList = [
     "<br>",
     "<span class='cmdOutput'>Random Password Generator</span><span class='helpSpace'><a href='#'>coming soon...</a></span><br>",
 ]
+
+let socialsList = [
+    "<span class='helpSpace'><a href='https://github.com/SHJR1' target='_blank'>Github</a></span>",
+    "<span class='helpSpace'><a href='https://codepen.io/sergioh1/full/LYQOQrd' target='_blank'>Codepen</a></span>",
+    "<span class='helpSpace'><a href='https://www.linkedin.com/in/sergiodev/' target='_blank'>Linkedin</a></span>",
+];
