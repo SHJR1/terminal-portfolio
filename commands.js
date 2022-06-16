@@ -19,3 +19,7 @@ let socialsList = [
     "<span class='helpSpace'><a href='https://codepen.io/sergioh1/full/LYQOQrd' target='_blank'>Codepen</a></span>",
     "<span class='helpSpace'><a href='https://www.linkedin.com/in/sergiodev/' target='_blank'>Linkedin</a></span>",
 ];
+
+let websiteList = [
+    "<span class='helpSpace'><a href='#'>website.com</a></span>",
+];

@@ -98,22 +98,22 @@ function clearCommand(){
 
 //Display about
 function aboutCommand(){
-    terminal.innerHTML += `<br><br><span class="error codeGreen">${aboutList.join(" ")}</span>`;
+    terminal.innerHTML += `<br><br>${aboutList.join(" ")}`;
 }
 
 //Display projects
 function projectCommand(){
-    terminal.innerHTML += `<br><br><span class="error codeGreen">${projectList.join(" ")}</span>`;
+    terminal.innerHTML += `<br><br>${projectList.join(" ")}`;
 }
 
 //Display socials
 function socialsCommand(){
-    terminal.innerHTML += `<br><span class="error codeGreen">${socialsList.join(" ")}</span>`;
+    terminal.innerHTML += `<br><br>${socialsList.join(" ")}`;
 }
 
 //Display website
 function websiteCommand(){
-    terminal.innerHTML += `<br><br><span class="error codeGreen">${socialsList.join(" ")}</span>`;
+    terminal.innerHTML += `<br><span class="error codeGreen">${websiteList.join(" ")}</span>`;
 }
 
 //Get date and time, display at #date element
