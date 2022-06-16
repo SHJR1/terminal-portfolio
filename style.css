@@ -13,15 +13,14 @@ body {
 #content {
     background-color: #333533;
     /*background-color: #004369;14213d 333533*/
-    
+    position: fixed;
     width: 50%;
     height: 30rem;
-    position: fixed;
     border-radius: .5rem;
     border: 1px solid #c2c2c2;
     border-top: 0px;
     box-shadow: 2px 3px 20px 2px #888888;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #navbar {
@@ -35,6 +34,8 @@ body {
     border: 1px solid #c2c2c2;
     border-left: 0px;
     border-right: 0px;
+    position:fixed;
+    width: inherit;
 }
 
 h2 {
@@ -135,6 +136,28 @@ a:hover {
     color: #65afff;
 }
 
+.helpSpace {
+    padding-left: 30px;
+    color: #65afff;
+    display: block;
+    margin: 1rem 0 0 2rem;
+}
+
+.helpSpace a {
+    text-decoration: underline;
+    color: #c2c2c2;
+}
+
+.helpSpace a:hover {
+    text-decoration: underline;
+    color: #65afff;
+}
+
+.cmdOutput {
+    color: #65afff;
+    margin-left: 2rem;
+}
+
 #caret{
     font-size: .7rem;
     color: #c2c2c2;
@@ -180,3 +203,10 @@ input:focus {
         color: #393d3f;
     }
 }
+
+/* width */
+/* ::-webkit-scrollbar {
+    width: 10px;
+    height: 500px;
+    overflow: hidden;
+  } */

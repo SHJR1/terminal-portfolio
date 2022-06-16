@@ -2,7 +2,7 @@
 let input = document.querySelector("input");
 let terminal = document.querySelector("#terminal");
 let all = document.querySelector("html");
-let commandList = ['about','portfolio', 'socials', 'website', 'clear'];
+
 
 run();
 
@@ -48,19 +48,19 @@ function checkInput(input){
     if(command){
         switch(command){
             case "clear":
-                clearConsole();
+                clear();
                 break;
             case "help":
                 help();
                 break;
             case "about":
-                about();
+                aboutCommand();
                 break;
-            case "portfolio":
-                clearConsole();
+            case "projects":
+                projectCommand();
                 break;
             case "socials":
-                clearConsole();
+                socials();
                 break;
             case "website":
                 clearConsole();
@@ -70,7 +70,7 @@ function checkInput(input){
         } 
 
     } else {
-        terminal.innerHTML += '<br>'
+        terminal.innerHTML += '<br>';
     }
 }
 
@@ -89,6 +89,18 @@ function help() {
     for(let i=0; i<commandList.length;i++){
         terminal.innerHTML += `<span class="error codeGreen">${commandList[i]}</span><br><br>`;
     }
+}
+
+function clear(){
+    terminal.innerHTML = '';
+}
+
+function aboutCommand(){
+    terminal.innerHTML += `<br><br><span class="error codeGreen">${aboutList.join(" ")}</span><br><br>`;
+}
+
+function projectCommand(){
+    terminal.innerHTML += `<br><br><span class="error codeGreen">${projectList.join(" ")}</span><br><br>`;
 }
 
 //Get date and time, display at #date element
