@@ -14,9 +14,9 @@ let projectList = [
 ]
 
 let socialsList = [
-    "<span class='helpSpace'><a href='https://github.com/SHJR1' target='_blank'>Github</a></span>",
-    "<span class='helpSpace'><a href='https://codepen.io/sergioh1/full/LYQOQrd' target='_blank'>Codepen</a></span>",
-    "<span class='helpSpace'><a href='https://www.linkedin.com/in/sergiodev/' target='_blank'>Linkedin</a></span>",
+    "<span class='helpSpace'><a href='https://github.com/SHJR1' target='_blank'><i class='fa-brands fa-github fa-xl'></i>Github</a></span>",
+    "<span class='helpSpace'><a href='https://codepen.io/sergioh1/full/LYQOQrd' target='_blank'><i class='fa-brands fa-codepen fa-xl'></i>Codepen</a></span>",
+    "<span class='helpSpace'><a href='https://www.linkedin.com/in/sergiodev/' target='_blank'><i class='fa-brands fa-linkedin fa-xl'></i>Linkedin</a></span>",
 ];
 
 let websiteList = [

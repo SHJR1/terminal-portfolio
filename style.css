@@ -147,6 +147,10 @@ a:hover {
     color: #65afff;
 }
 
+i {
+    margin-right: .7rem;
+}
+
 .helpPadding {
     margin-left: 4rem;
 }
