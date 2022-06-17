@@ -8,6 +8,8 @@ body {
     /*background-color:blue=013a63 #14213d;525174  b5d6d6*/
 }
 
+
+
 #container {
     display: flex;
     justify-content: center;
@@ -123,11 +125,10 @@ a:hover {
 }
 
 #terminal {
-    padding: 10px 10px;
+    padding: 30px 10px;
     font-family: 'Press Start 2P', cursive;
     font-size: .7rem;
     color: #c2c2c2;
-    
     /*38b000 4AF626  green: 4AF626*/
 }
 
@@ -211,6 +212,10 @@ input:focus {
 }
 
 @media screen and (max-width: 370px) {
+    .last-login {
+        margin-bottom: 5px;
+    }
+
     h2 {
         display: none;
     } 
@@ -222,10 +227,3 @@ input:focus {
         color: #393d3f;
     }
 }
-
-/* width */
-/* ::-webkit-scrollbar {
-    width: 10px;
-    height: 500px;
-    overflow: hidden;
-  } */
